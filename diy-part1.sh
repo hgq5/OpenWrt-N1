@@ -13,3 +13,6 @@
 
 # Add a feed source
 #sed -i '$a src-git lienol https://github.com/Lienol/openwrt-package' feeds.conf.default
+sed -i '$a src-git helloworld https://github.com/fw876/helloworlde' feeds.conf.default
+sed -i '$a src-git passwall https://github.com/keramist/passwall' feeds.conf.default
+sed -i '$a src-git darkmatter git://github.com/apollo-ng/luci-theme-darkmatter.git' feeds.conf.default
