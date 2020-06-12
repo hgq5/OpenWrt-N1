@@ -73,7 +73,7 @@ jobs:
         $GITHUB_WORKSPACE/$DIY_P1_SH
     
     - name: 安装第三方插件
-      run: WORKINGDIR="home/workdir/openwrt/feeds/luci/applications/luci-app-adguardhome"
+      run: WORKINGDIR="workdir/openwrt/feeds/luci/applications/luci-app-adguardhome"
            mkdir $WORKINGDIR -p
            rm $WORKINGDIR/* -fr
            wget https://github.com/rufengsuixing/luci-app-adguardhome/archive/master.zip -O $WORKINGDIR/master.zip
