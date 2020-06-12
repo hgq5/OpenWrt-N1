@@ -72,7 +72,7 @@ jobs:
         cd openwrt
         $GITHUB_WORKSPACE/$DIY_P1_SH
     
-    - #name: 安装第三方插件
+    #- name: 安装第三方插件
       #run: WORKINGDIR="workdir/openwrt/feeds/luci/applications/luci-app-adguardhome"
            #mkdir $WORKINGDIR -p
            #rm $WORKINGDIR/* -fr
