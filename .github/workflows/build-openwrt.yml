@@ -74,13 +74,13 @@ jobs:
     
     - #name: 安装第三方插件
       #run: WORKINGDIR="workdir/openwrt/feeds/luci/applications/luci-app-adguardhome"
-           mkdir $WORKINGDIR -p
-           rm $WORKINGDIR/* -fr
-           wget https://github.com/rufengsuixing/luci-app-adguardhome/archive/master.zip -O $WORKINGDIR/master.zip
-           unzip $WORKINGDIR/master.zip -d $WORKINGDIR
-           mv $WORKINGDIR/luci-app-adguardhome-master/* $WORKINGDIR/
-           rmdir $WORKINGDIR/luci-app-adguardhome-master
-           rm $WORKINGDIR/master.zip
+           #mkdir $WORKINGDIR -p
+           #rm $WORKINGDIR/* -fr
+           #wget https://github.com/rufengsuixing/luci-app-adguardhome/archive/master.zip -O $WORKINGDIR/master.zip
+           #unzip $WORKINGDIR/master.zip -d $WORKINGDIR
+           #mv $WORKINGDIR/luci-app-adguardhome-master/* $WORKINGDIR/
+           #rmdir $WORKINGDIR/luci-app-adguardhome-master
+           #rm $WORKINGDIR/master.zip
 
     - name: Update feeds
       run: cd openwrt && ./scripts/feeds update -a
